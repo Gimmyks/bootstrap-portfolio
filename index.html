@@ -1,94 +1,198 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
-  <title>Bootstrap</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY PORTFOLIO</title>
+    <meta name="description" content="An interactive getting started guide for Brackets.">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://media.innity.net/lib/TweenMax.min.js?version=1.20.2"></script>
 </head>
-<body>
-  <div class="nav-wrapper">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Dropdown link
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
+
+<body style="background-color: #ebe6da">
+    <header class="masthead text-center text-white" style="background-image: url(textured.png);">
+        <div class="masthead-content">
+            <div class="container">
+                <div class="title" style="color: #fdfaf4;">------- GIMMY -------<br>GRAPHIC DESIGNER</div>
+                <img src="potrait.png" class="potrait mb-0">
             </div>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </div>
+        </div>
+    </header>
+    <section style="background-color:#e2decc; background-image: url(textured.png);">
+       
+        <div class="container">
+            <div class="title" style="color: #347891;">CURRENT JOB</div>
+            <div class="row align-items-center">
+                <div class="col-lg-4 btn">
+                    <div class="p-5">
+                        <img class="img-fluid" src="btn_ui.png" id="btn-ui" alt="">
+                        <div class="overlay">
+                            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#ui-wrapper">
+                                <img src="btn_ui_hover.png" class="btn_ui_hover">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 btn">
+                    <div class="p-5">
+                        <img class="img-fluid" src="btn_anim.png" id="btn-anim" alt="">
+                        <div class="overlay">
+                            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#anim-wrapper">
+                                <img src="btn_anim_hover.png"class="btn_ui_hover">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 btn">
+                    <div class="p-5">
+                        <img class="img-fluid" src="btn_ux.png" id="btn-ux" alt="">
+                        <div class="overlay">
+                            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#ux-wrapper">
+                                <img src="btn_ux_hover.png"class="btn_ui_hover">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <div class="container">
-    <div class="row">
-       <div class="col-md-6 col-lg-12 my-2"> <!--my means margin of top and bottom -->
-        <div class="card w-100">
-          <img src="https://picsum.photos/200">
-          <div class="card-body">
-            <h5 class="card-title">Project #1</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-12 my-2">
-        <div class="card w-100">
-          <img src="https://picsum.photos/200">
-          <div class="card-body">
-            <h5 class="card-title">Project #1</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          </div>
-        </div>
-      </div>
-      <div class="card col-lg-4 m-1">
-        <img src="https://picsum.photos/200" class="card-img-top">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
-      </div>
-      
-      <div class="card col-lg-4 m-1">
-        <img src="https://picsum.photos/200" class="card-img-top">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
-      </div>
+    <section style="background-color:#eae6da; background-image: url(textured.png);">
+        <div id="ui-wrapper"></div>
+        <div class="container">
+            <div class="title" style="color: #347891;">USER INTERFACE</div>
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-2">
+                    <div class="p-5">
+                        <img class="img-fluid" src="profile_card.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <div class="p-5">
+                        <p class="description">My initial work was to support the design with images and content alignment. I was working closely with the client on ideation.<br><br>
+                            Due to the fact that the advertising filed is heading towards digital, thus we are now learning how to
+                            collaborate between all kind of user behaviour and UI design.</p>
+                        <div class="text-left p-1">
 
-      <div class="card col-lg-4 m-1">
-        <img src="https://picsum.photos/200" class="card-img-top">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <!--mouseover area-->
+
+                            <div class="floaty row">
+                                <div class="col-2">
+                                    <img class="tools-btn" src="ps.png">
+                                </div>
+                                <div class="floaty-list col-10">
+                                    <img class="tools-btn" src="ai.png">
+                                    <!--                                   <img class="tools-btn" src="ps.png" style="padding-left: 20px">-->
+                                </div>
+                            </div>
+
+                            <!--mouseover area END-->
+
+                            <p class="description">Tools</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div> <!-- end of row-->
-  </div>
+    </section>
+    <section style="background-color:#e2decc; background-image: url(textured.png);">
+       <div id="anim-wrapper"></div>
+        
+        <div class="container">
+            <div class="title" style="color: #347891;">ANIMATION</div>
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="p-5">
+                        <img class="img-fluid" src="fitbit.png" alt="">
+                        <img id="fitbit1" class="img-fluid" src="fitbit1.png" alt="">
+                        <img id="fitbit2" class="img-fluid" src="fitbit2.png" alt="">
+                        <img id="fitbit3" class="img-fluid" src="fitbit3.png" alt="">
+<!--                        <div id="fitbit1"></div>-->
+                    </div>
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <div class="p-5">
+                        <p class="description">Applying the animation into a design is a bonus to attract user or certain target audience to engage with it.<br><br>
+                            The main skill that use to apply animation in my everyday work is CSS Keyframes and Javascript. This is because the final output of the design or ad must in the form of HTML5. Secondary tool is After Effect.</p>
+                        <div class="text-left p-1">
+
+                            <!--mouseover area-->
+
+                            <div class="floaty row">
+                                <div class="col-2">
+                                    <img class="tools-btn" src="dw.png">
+                                </div>
+                                <div class="floaty-list col-10">
+                                    <img class="tools-btn" src="ps.png">
+                                    <img class="tools-btn" src="ae.png" id="btn-ae">
+                                </div>
+                            </div>
+
+                            <!--mouseover area END-->
+
+                            <p class="description">Tools</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section style="background-color:#eae6da; background-image: url(textured.png);">
+       <div id="ux-wrapper"></div>
+        <div class="container">
+            <div class="title" style="color: #347891;">USER EXPERIENCE</div>
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-2">
+                    <div class="p-5">
+<!--                        <img class="img-fluid" src="ux.png" alt="">-->
+                       <div id="revolver"></div>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <div class="p-5">
+                        <p class="description">During the production stage, other than applying animation on the banner. There’s always request from client that needed to add in some festures or some small interaction experience, such as gallery, swiper, form and etc.<br><br>
+                            There’s also gamification such as, leaderboard, mini game, and etc which needed to cooporate with backend programmer.</p>
+                        <div class="text-left p-1">
+
+                            <!--mouseover area-->
+
+                            <div class="floaty row">
+                                <div class="col-2">
+                                    <img class="tools-btn" src="dw.png">
+                                </div>
+                                <div class="floaty-list col-10">
+                                    <img class="tools-btn" src="ps.png">
+                                    <!--                                   <img class="tools-btn" src="ae.png" id="btn-ae">-->
+                                </div>
+                            </div>
+
+                            <!--mouseover area END-->
+
+                            <p class="description">Tools</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
+  <!-- Contact Form JavaScript -->
+  <script src="js/jqBootstrapValidation.js"></script>
+  <script src="js/contact_me.js"></script>
 
+  <!-- Custom scripts for this template -->
+  <script src="js/freelancer.min.js"></script>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
+
 </html>
